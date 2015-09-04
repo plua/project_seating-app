@@ -30,6 +30,11 @@ h1, p {
 	background-color:#BFEFFF;
 
 }
+
+
+.div_hover:hover { 
+	background-color: #FFFFFF; 
+}
 #form{
 	padding: 51px;
 	margin: 39%;
