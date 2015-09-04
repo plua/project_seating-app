@@ -5,10 +5,11 @@ body {
 }
 h1, p {
 	text-align: center;
+	
 }
 #wrapper {
 	margin: 0 auto;
-	width: 70%;
+	width: 50%;
 }
 #row-1, #row-2, #row-3, #row-4 {
 	width: 100%;
@@ -28,4 +29,8 @@ h1, p {
 	text-align: center;
 	background-color:#BFEFFF;
 
+}
+#form{
+	padding: 50px;
+	margin: 40%;
 }
