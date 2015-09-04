@@ -30,4 +30,6 @@ h1, p {
 
 }
 
-.div_hover:hover { background-color: #FFFFFF; }
+.div_hover:hover { 
+	background-color: #FFFFFF; 
+}
