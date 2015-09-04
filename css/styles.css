@@ -9,10 +9,10 @@ h1, p {
 }
 #wrapper {
 	margin: 0 auto;
-	width: 50%;
+	width: 70%;
 }
 #row-1, #row-2, #row-3, #row-4 {
-	width: 100%;
+	width: 80%;
 	margin: 0 auto;
 	background-color: #F0F8FF;
 	border-radius: 0 auto;
@@ -20,12 +20,12 @@ h1, p {
 }
 #seat-1, #seat-2, #seat-3, #seat-4, #seat-5, #seat-6 {
 	width: 12%;
-	height: 100px;
+	height: 60px;
 	border: solid 2px red;
 	border-color: #0D4F8B;
 	margin: 2%;
 	float: left;
-	line-height: 100px;
+	line-height: 60px;
 	text-align: center;
 	background-color:#BFEFFF;
 
