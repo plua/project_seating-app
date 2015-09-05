@@ -4,20 +4,28 @@ When html form button is clicked, run function reserveSeat.
 Function will hide form, update seat availability, addClass/removeClass.
 */
 
-// Get HTML form button ID, wait for the button to be clicked, then run function reserveSeat
-document.getElementById("assign").addEventListener('click', reserveSeat)
-
-function reserveSeat(){
-
+/* Step 1: Generate HTML */
+// We set up a class named Theatre and pass name, number of seats, and id through its parameter
+function Theatre(name, numberOfSeats, id){
+	this.name = name;
+	this.numberOfSeats = numberOfSeats;
+	this.id = id;
 }
 
-/* Step 1: Generate HTML */
+//Add a method to the prototype of Theatre (through prototype inheritance, we can use "this" to refer to Theatre)
+//The method returns the number of seats passed through Theatre
+Theatre.prototype.getNumberOfSeats(){
+	return this.numberOfSeats;
+}
 
- function Theatre(name,numberOfSeats,id) {
- 	this.name = name;
- 	this.numberOfSeats = numberOfSeats;
- 	this.id = id;
- }
+//Create a class for Seat, define the seat number's ID
+function Seat(seatNumber){
+	this.seatNumber = seatNumber;
+	this.id ="seat_"+ this.seatNumber;
+}
+
+
+
 
 /* Step 2: When a div is clicked, have form pop up */
 
