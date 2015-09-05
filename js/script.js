@@ -1,28 +1,5 @@
-/*
-Once a seat is clicked, display html form.
-When html form button is clicked, run function reserveSeat.
-Function will hide form, update seat availability, addClass/removeClass.
-*/
 
 /* Step 1: Generate HTML */
-// We set up a class named Theatre and pass name, number of seats, and id through its parameter
-function Theatre(name, numberOfSeats, id){
-	this.name = name;
-	this.numberOfSeats = numberOfSeats;
-	this.id = id;
-}
-
-//Add a method to the prototype of Theatre (through prototype inheritance, we can use "this" to refer to Theatre)
-//The method returns the number of seats passed through Theatre
-Theatre.prototype.getNumberOfSeats(){
-	return this.numberOfSeats;
-}
-
-//Create a class for Seat, define the seat number's ID
-function Seat(seatNumber){
-	this.seatNumber = seatNumber;
-	this.id ="seat_"+ this.seatNumber;
-}
 
 
 
@@ -31,8 +8,38 @@ function Seat(seatNumber){
 
 
 
+
 /* Step 3: Let user submit information on the form */
 
 
 
+
 /* Step 4: Save user's information and associate it with the seat */
+
+
+
+
+//Please keep the code below, I may build upon it or scrap it. -Pam
+
+/*
+//Created a class named Theatre and passed name, number of seats, and seat id through its parameter
+ function Theatre(name,numberOfSeats,id) {
+ 	this.name = name;
+ 	this.numberOfSeats = numberOfSeats;
+ 	this.id = id;
+ }
+
+//We are adding a method getNumOfSeats to the prototype of Theatre
+//prototype is used so that javascript knows that everytime we create an instance of Theatre, it has a method called getNumOfSeats.
+//The method returns the number of seats passed through Theatre. This refers to our theatre object. 
+Theatre.prototype.getNumOfSeats = function(){
+	return this.numberOfSeats;
+};
+
+//Created a class name Seat which we'll pass in the seatNumber through its parameters
+//We are taking the id of Seat and setting it equal to what will become the id of our seat divs
+function Seat(seatNumber){
+	this.seatNumber = seatNumber;
+	this.id = "seat_" + this.seatNumber;
+}
+*/
