@@ -1,25 +1,25 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 
 body {
-	font-family: "Open Sans";
+	font-family: "Raleway";
 }
 h1, p {
 	text-align: center;	
 }
 h1 {
 	font-family: "Lobster";
-	padding-top: 40px;
+	padding-top: 20px;
 }
 p {
-	width: 60%;
+	width: 50%;
 	margin: 0 auto;
 	font-size: 0.9em;
 }
 #wrapper {
 	margin: 0 auto;
 	padding-top: 15px;
-	width: 70%;
+	width: 65%;
 }
 .available {
 	width: 23%;
