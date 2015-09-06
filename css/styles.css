@@ -4,34 +4,27 @@ body {
 	font-family: "Open Sans";
 }
 h1, p {
-	text-align: center;
-	
+	text-align: center;	
+}
+p {
+	width: 70%;
+	margin: 0 auto;
 }
 #wrapper {
 	margin: 0 auto;
 	width: 70%;
 }
-#row-1, #row-2, #row-3, #row-4 {
-	width: 80%;
-	margin: 0 auto;
-	background-color: #F0F8FF;
-	border-radius: 0 auto;
-	border : solid 1px;
-}
-#seat-1, #seat-2, #seat-3, #seat-4, #seat-5, #seat-6 {
-	width: 12%;
-	height: 60px;
-	border: solid 2px red;
+.available {
+	width: 23%;
+	height: 50px;
 	border-color: #0D4F8B;
-	margin: 2%;
+	margin: 1%;
 	float: left;
-	line-height: 60px;
+	line-height: 50px;
 	text-align: center;
 	background-color:#BFEFFF;
 
 }
-
-
 .div_hover:hover { 
 	background-color: #FFFFFF; 
 }

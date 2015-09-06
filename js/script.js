@@ -1,7 +1,22 @@
 
 /* Step 1: Generate HTML */
 
+var wrapper = document.getElementById('wrapper');
 
+var theatre = {
+	name: 'Grand Circus Theatre',
+	numberOfSeats: 24
+}
+
+function createSeats(){
+	for (var i = 1; i < theatre.numberOfSeats+1; i++){
+	var id = "seat_" + i;
+	wrapper.innerHTML += '<div id="'+ id +'">'+ "A" + i +'</div';
+	document.getElementById(id).className= 'available';	
+	}
+}
+
+createSeats();
 
 
 /* Step 2: When a div is clicked, have form pop up */
