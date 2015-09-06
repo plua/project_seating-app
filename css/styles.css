@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 
+html {
+     overflow-y: -moz-scrollbars-vertical;
+     overflow-y: scroll;
+}
 body {
 	font-family: "Raleway";
 }
@@ -21,20 +25,28 @@ p {
 	padding-top: 15px;
 	width: 65%;
 }
-.available {
+#wrapper div {
 	width: 23%;
 	height: 50px;
-	border-color: #0D4F8B;
 	margin: 1%;
 	float: left;
 	line-height: 50px;
 	text-align: center;
-	cursor: pointer;
 	border-radius: 10px;
+}
+.available {
+	cursor: pointer;
 	background-color:#ddd;
 }
 .available:hover { 
 	background-color: #ccc; 
+}
+.available:active {
+	background-color: #f48c69;
+}
+.unavailable {
+	cursor: default;
+	background-color: #f16839;
 }
 #form{
 	padding: 51px;
