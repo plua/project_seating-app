@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
 
 body {
 	font-family: "Open Sans";
@@ -6,12 +7,18 @@ body {
 h1, p {
 	text-align: center;	
 }
+h1 {
+	font-family: "Lobster";
+	padding-top: 40px;
+}
 p {
-	width: 70%;
+	width: 60%;
 	margin: 0 auto;
+	font-size: 0.9em;
 }
 #wrapper {
 	margin: 0 auto;
+	padding-top: 15px;
 	width: 70%;
 }
 .available {
@@ -22,11 +29,12 @@ p {
 	float: left;
 	line-height: 50px;
 	text-align: center;
-	background-color:#BFEFFF;
-
+	cursor: pointer;
+	border-radius: 10px;
+	background-color:#ddd;
 }
-.div_hover:hover { 
-	background-color: #FFFFFF; 
+.available:hover { 
+	background-color: #ccc; 
 }
 #form{
 	padding: 51px;
