@@ -52,3 +52,34 @@ p {
 	padding: 51px;
 	margin: 39%;
 }
+
+
+@media (max-width: 800px) {
+  	h1 {
+  	font-size: 4em;
+    }
+  	p { 
+  	font-size: 1.7em;
+  	width:80%;
+    }
+	#wrapper{
+	width: 85%;	
+	}
+} 
+
+@media (max-width: 1000px) and (min-width: 801px) {
+  	h1 {
+  	font-size: 3em;
+    }
+  	p { 
+  	font-size: 1.3em;
+  	width: 65%;
+    }
+	#wrapper{
+	width: 75%;	
+	}
+} 
+
+
+
+
