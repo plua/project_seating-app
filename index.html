@@ -6,12 +6,21 @@
 </head>
 <body>
 	<h1>Grand Cirque Theatre</h1>
-		<p>Welcome, please click on the seat that you would like to reserve for our upcoming show. Available seats are shown in light grey!</p>
+		<p>Welcome, please click on the seat that you would like to reserve for our upcoming show and fill out the reservation form!</p>
 	<div id="key">
 		<div class="active"></div> = Available  <div class="inactive"></div> = Unavailable
 	</div>
 	<div id="wrapper"></div>
-	<div id="form"></div>
+	<div id="form" style="display: none;">
+		<h2>Seat Reservation Form</h2>
+		<p id="picked_seat"></p>
+		<form>
+			Name: <input></input><br>
+			Email: <input></input><br>
+			<input type="hidden" id="current_seat" value="" />
+			<div class="center">
+				<button id="formButton">Reserve</button></div></form>
+	</div>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

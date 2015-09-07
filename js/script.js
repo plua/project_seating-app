@@ -1,4 +1,6 @@
 
+
+
 /* Step 1: Generate HTML */
 
 var wrapper = document.getElementById('wrapper');
@@ -23,11 +25,25 @@ function createSeats(){
 
 /* Step 2: When a div is clicked, have form pop up */
 
+
 function showForm(id){
 	var form = document.getElementById('form');
-	form.innerHTML = '<h2>Seat Reservation Form</h2><p>You have chosen to reserve seat '+ this.id.substr(5,6) +'</p><form>Name: <input class="'+ id +'"></input><br>Email: <input class="'+ id +'"></input><br><div class="center"><button id="formButton">Reserve</button></div></form>';
+	var picked = document.getElementById('picked_seat');
+	form.style.display = "block";
+	var currentSeat = document.getElementById('current_seat');
+	currentSeat.value = this.id;
+	picked.innerText = "You have chosen to reserve seat " + this.id.substr(5,6);
 };
 
+/*
+function showForm(id){
+	var form = document.getElementById('form');
+	form.innerHTML = '<h2>Seat Reservation Form</h2><p>You have chosen to reserve seat '+
+	 this.id.substr(5,6) +'</p><form>Name: <input class="'+ id +'"></input><br>Email: <input class="'+ 
+	 id +'"></input><br><div class="center"><button id="formButton">Reserve</button></div></form>';
+
+};
+*/
 createSeats();
 
 
