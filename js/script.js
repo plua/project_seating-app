@@ -25,7 +25,7 @@ function createSeats(){
 
 function showForm(id){
 	var form = document.getElementById('form');
-	form.innerHTML = '<h2>Reserve your seat now!</h2><form>Name: <input class="'+ id +'"></input><br>Email: <input class="'+ id +'"></input><br><div class="center"><button id="formButton">Reserve</button></div></form>';
+	form.innerHTML = '<h2>Seat Reservation Form</h2><p>You have chosen to reserve seat '+ this.id.substr(5,6) +'</p><form>Name: <input class="'+ id +'"></input><br>Email: <input class="'+ id +'"></input><br><div class="center"><button id="formButton">Reserve</button></div></form>';
 };
 
 createSeats();

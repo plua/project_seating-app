@@ -30,7 +30,7 @@ p {
 	float: left;
 	line-height: 45px;
 	text-align: center;
-	border-radius: 10px;
+	border-radius: 0px;
 	-webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -61,10 +61,10 @@ p {
 	background-color:#ddd;
 }
 .available:hover { 
-	background-color: #ccc; 
+	background-color: #22c0ce; 
 }
 .available:active {
-	background-color: #f48c69;
+	background-color: #1ea8b4;
 }
 .unavailable {
 	cursor: default;
@@ -80,7 +80,16 @@ p {
 	clear: both;
 }
 #form h2 {
+	margin: 0;
+	margin-top: 10px;
+	margin-bottom: 4px;
 	text-align: center;
+}
+#form p {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	font-size: 1.2em;
 }
 #form input {
 	margin-bottom: 10px;
