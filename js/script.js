@@ -42,12 +42,14 @@ function getFormData() {
 	appendFormData(reservationName, reservationEmail, reservationSeat);
 }
 function appendFormData(name,email,seat){
-	var reservationInfo = document.createElement('div');
 	form.style.display = "none";
+	/*
+	var reservationInfo = document.createElement('div');
 	reservationInfo.id = seat;
 	reservationInfo.className= 'unavailable';
    	reservationInfo.innerHTML = name, email;
-   	reservationInfo.appendChild(element);	
+   	reservationInfo.appendChild(element);
+   	*/	
 }
 
 /* Step 4: Save user's information and associate it with the seat */
