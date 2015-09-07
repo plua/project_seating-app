@@ -78,6 +78,7 @@ p {
 	text-align: center;
 	border: 2px solid white;
 	clear: both;
+	display: none;
 }
 #form h2 {
 	margin: 0;
