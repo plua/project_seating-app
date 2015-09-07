@@ -8,20 +8,27 @@ var theatre = {
 	numberOfSeats: 24
 }
 
-function createSeats(){
-	for (var i = 1; i < theatre.numberOfSeats+1; i++){
-	var id = "seat_" + i;
-	wrapper.innerHTML += '<div id="'+ id +'">'+ "A" + i +'</div';
-	document.getElementById(id).className= 'available';	
-	}
-}
 
-createSeats();
+function createSeats(){
+ for (var i = 1; i < theatre.numberOfSeats+1; i++){
+  var element = document.createElement('div');
+   element.id = "seat_"+i;
+   element.className= 'available';
+   element.innerHTML = i;
+   element.addEventListener('click', showForm);
+   wrapper.appendChild(element);
+ }
+};
 
 
 /* Step 2: When a div is clicked, have form pop up */
 
+function showForm(id){
+	var form = document.getElementById('form');
+	form.innerHTML = '<h3>Reserve your seat now!</h3>Name: <input class="'+ id +'"></input><br>Email: <input class="'+ id +'"></input><br><button>Reserve</button>';
+};
 
+createSeats();
 
 
 /* Step 3: Let user submit information on the form */
