@@ -38,6 +38,24 @@ p {
     -ms-user-select: none;
     user-select: none;
 }
+#key {
+	width: 80%;
+	text-align: center;
+	margin: 10px auto;
+	font-size: 0.9em;
+}
+#key div {
+	border: 1px solid black;
+	height: 10px;
+	width: 10px;
+	display: inline-block;
+}
+.active {
+	background-color: #ddd;
+}
+.inactive {
+	background-color: #f16839;
+}
 .available {
 	cursor: pointer;
 	background-color:#ddd;
