@@ -1,8 +1,9 @@
-/ Step 1: Generate HTML /
+/* Step 1: Generate HTML */
+
 var wrapper = document.getElementById('wrapper');
 var form = document.getElementById('form');
 var theatre = {
-	name: 'Grand Circus Theatre',
+	name: 'Grand Cirque Theatre',
 	numberOfSeats: 24
 }
 function createSeats(){
@@ -17,7 +18,7 @@ function createSeats(){
 };
 createSeats();
 
-/ Step 2: When a div is clicked, have form pop up /
+/* Step 2: When a div is clicked, have form pop up */
 
 function showForm(id){
 	var picked = document.getElementById('picked_seat');
@@ -27,11 +28,11 @@ function showForm(id){
 	picked.innerText = "You have chosen to reserve seat " + this.id.substr(5,6);
 };
 
-/ Step 3: Let user submit information on the form /
+/* Step 3: Let user submit information on the form */
 
 var formButton = document.getElementById('formButton');
 formButton.addEventListener('click', getFormData);
-function getFormData() {
+function getFormData(formName, formEmail, formSeat) {
 	var formName = document.getElementById('form_name');
 	var formEmail = document.getElementById('form_email');
 	var formSeat = document.getElementById('current_seat');
@@ -44,7 +45,7 @@ function getFormData() {
 	formEmail.value = "";
 };
 
-/ Step 4: Save user's information and associate it with the seat /
+/* Step 4: Save user's information and associate it with the seat */
 
 function appendFormData(name,email,seat){
 	form.style.display = "none";

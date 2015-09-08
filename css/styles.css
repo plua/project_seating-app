@@ -164,7 +164,7 @@ h4 {
 	#wrapper{
 		width: 70%; 
 	}
-	#wrapper .availabe, .unavailable {
+	#wrapper .available, .unavailable {
 		width: 24%;
 		margin: 0.5%;
 	}
