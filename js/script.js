@@ -3,7 +3,7 @@
 var wrapper = document.getElementById('wrapper');
 var form = document.getElementById('form');
 var theatre = {
-	name: 'Grand Cirque Theatre',
+	name: 'Petite Cirque Theatre',
 	numberOfSeats: 24
 }
 function createSeats(){
