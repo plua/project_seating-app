@@ -9,6 +9,16 @@ body {
 	font-family: "Raleway";
 	color: #2a252d;
 }
+
+h1 a {
+	width: 189px;
+	height: 83px;
+	background: url('../img/logo.png') no-repeat left center;
+	display: block;
+	text-indent: -9999px;
+	margin: 0 auto;
+}
+
 h1, p {
 	text-align: center; 
 }
