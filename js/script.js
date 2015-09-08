@@ -1,9 +1,9 @@
-/* Step 1: Generate HTML */
+/ Step 1: Generate HTML /
 var wrapper = document.getElementById('wrapper');
-var form = document.getElementById('form');;
+var form = document.getElementById('form');
 var theatre = {
-	name: 'Grand Circus Theatre',
-	numberOfSeats: 24
+ name: 'Grand Circus Theatre',
+ numberOfSeats: 24
 }
 function createSeats(){
  for (var i = 1; i < theatre.numberOfSeats+1; i++){
@@ -17,40 +17,38 @@ function createSeats(){
 };
 createSeats();
 
-/* Step 2: When a div is clicked, have form pop up */
+/ Step 2: When a div is clicked, have form pop up /
 
 function showForm(id){
-	var picked = document.getElementById('picked_seat');
-	form.style.display = "block";
-	var currentSeat = document.getElementById('current_seat');
-	currentSeat.value = this.id;
-	picked.innerText = "You have chosen to reserve seat " + this.id.substr(5,6);
+ var picked = document.getElementById('picked_seat');
+ form.style.display = "block";
+ var currentSeat = document.getElementById('current_seat');
+ currentSeat.value = this.id;
+ picked.innerText = "You have chosen to reserve seat " + this.id.substr(5,6);
 };
 
-/* Step 3: Let user submit information on the form */
+/ Step 3: Let user submit information on the form /
 
 var formButton = document.getElementById('formButton');
 formButton.addEventListener('click', getFormData);
 function getFormData() {
-	var formName = document.getElementById('form_name');
-	var formEmail = document.getElementById('form_email');
-	var formSeat = document.getElementById('current_seat');
-	var reservationName = formName.value;
-	var reservationEmail = formEmail.value;
-	var reservationSeat = formSeat.value;
-	document.getElementById(reservationSeat).className="unavailable";
-	appendFormData(reservationName, reservationEmail, reservationSeat);
-}
+ var formName = document.getElementById('form_name');
+ var formEmail = document.getElementById('form_email');
+ var formSeat = document.getElementById('current_seat');
+ var reservationName = formName.value;
+ var reservationEmail = formEmail.value;
+ var reservationSeat = formSeat.value;
+ document.getElementById(reservationSeat).className="unavailable";
+ appendFormData(reservationName, reservationEmail, reservationSeat);
+};
+
+/ Step 4: Save user's information and associate it with the seat /
+
 function appendFormData(name,email,seat){
-	form.style.display = "none";
-	/*
-	var reservationInfo = document.createElement('div');
-	reservationInfo.id = seat;
-	reservationInfo.className= 'unavailable';
-   	reservationInfo.innerHTML = name, email;
-   	reservationInfo.appendChild(element);
-   	*/	
-}
-
-/* Step 4: Save user's information and associate it with the seat */
-
+ form.style.display = "none";
+ var appendSeat = document.getElementById(seat);
+ var newElement = document.createElement('div');
+ newElement.className = "reservation";
+ document.getElementById(seat).appendChild(newElement);
+ newElement.innerHTML= '<span>Reserved</span><div><span>' + name + '</span></div><div><span>'+ email + '</span></div>';
+};
